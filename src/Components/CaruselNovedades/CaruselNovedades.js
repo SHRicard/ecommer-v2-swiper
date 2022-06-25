@@ -11,10 +11,12 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
+import "swiper/css/navigation";
+
 import "./CaruselNovedades.css";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import { EffectCoverflow, Pagination, Navigation } from "swiper";
 //FUNCION
 // <-------noveda1----->
 const noveda1 = (Novedadesjson) => Novedadesjson.id === 1;
@@ -50,6 +52,7 @@ const CaruselNovedades = () => {
         effect={"coverflow"}
         grabCursor={true}
         loop={true}
+        navigation={true}
         centeredSlides={true}
         slidesPerView={"auto"}
         coverflowEffect={{
@@ -60,7 +63,7 @@ const CaruselNovedades = () => {
           slideShadows: true,
         }}
         pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow, Pagination, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>

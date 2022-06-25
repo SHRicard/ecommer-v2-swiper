@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import Menu from "../Menu/Menu.js";
 import Envio from "../Envio/Envio.js";
+
 import CaruselNovedades from "../CaruselNovedades/CaruselNovedades.js";
 import CaruselOfetas from "../CaruselOfetas/CaruselOfetas.js";
 import Footer from "../Footer/Footer.js";
@@ -23,7 +24,14 @@ const Home = () => {
           <h1 className="text-center text-Anton pt-3 pb-3">
             Descuentos Imperdibles
           </h1>
-          {/* <CaruselOfetas /> */}
+          <div className="row">
+            <div className="col-6">
+              <CaruselOfetas />
+            </div>
+            <div className="col-6">
+              <h1>info de oferta</h1>
+            </div>
+          </div>
         </div>
       </div>
       <div className="col-12">
