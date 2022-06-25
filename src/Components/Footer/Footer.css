@@ -1,0 +1,44 @@
+.bi-facebook{
+    font-size: 25px;
+    color: #fff;
+    transition: 1s;
+    cursor: pointer;
+}
+.bi-whatsapp{
+    cursor: pointer;
+    
+}
+.bi-instagram{
+    font-size: 25px;
+    transition: 1s;
+    color: #fff;
+    cursor: pointer;
+}
+.bi-headset{
+    font-size: 20px;
+
+}
+.bi-geo-alt-fill{
+    font-size: 20px;
+
+}
+.bi-geo-alt{
+    font-size: 20px;
+
+}
+.bi-facebook:hover{
+    color: #3b5998;
+    font-size: 30px;
+
+
+}
+.bi-instagram:hover{
+    color: #e1306c;
+    font-size: 30px;}
+
+.atencion{
+        font-size: 0.8rem;
+    }
+.RRamirez{
+    font-size: 0.6rem;
+}

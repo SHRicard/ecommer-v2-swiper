@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "marca": "Gaelle",
+    "modelo": "2540 Women",
+    "logo": "img/Logo/Gaelle.png",
+    "color": "Verde",
+    "talles": [35, 36, 37, 38, 39, 40],
+    "description": "Capellada cerrada con abrojo refozado de tela con refuerzo con suela de Goma",
+    "img": [{ "id": "3", "foto": "img/Gaelle/2540w/verdeCostado.png" }],
+    "precio": "$ 3.500"
+  },
+  {
+    "id": 2,
+    "marca": "Jaguar",
+    "modelo": "Panchas 7216",
+    "logo": "img/Logo/Jaguar.png",
+    "color": "Negro - Rosa",
+    "talles": [36, 37, 38, 39, 40],
+    "description": "Zapatilla confeccionada en poliéster, fácil de calzar gracias a no tener cordones ",
+    "img": [{ "id": "1", "foto": "img/Jaguar/NegroRosa.png" }],
+    "precio": "$ 3.500"
+  },
+  {
+    "id": 3,
+    "marca": "Jaguar",
+    "modelo": "Panchas 7216",
+    "logo": "img/Logo/Jaguar.png",
+    "color": " Negro - Azul",
+    "talles": [36, 37, 38, 39, 40],
+    "description": "Zapatilla confeccionada en poliéster, fácil de calzar gracias a no tener cordones ",
+    "img": [{ "foto": "img/Jaguar/NegroRojo.png" }],
+    "precio": "$ 3.500"
+  },
+
+  {
+    "id": 4,
+    "marca": "Gaelle",
+    "modelo": "Running Women",
+    "logo": "img/Logo/Gaelle.png",
+    "color": "Rosa - Blanco",
+    "talles": [35, 36, 37, 38, 39, 40],
+    "description": "Calzado de dama deportivo ultra liviano refuerzo con suela de Goma",
+    "img": [{ "id": "3", "foto": "img/Gaelle/Rosa/costadoRosa.png" }],
+    "precio": "$ 3.500"
+  },
+  {
+    "id": 5,
+    "marca": "Gaelle",
+    "modelo": "Running 300w",
+    "logo": "img/Logo/Gaelle.png",
+    "color": "Negro - Fucia",
+    "color-bg": "#f00",
+    "talles": [35, 36, 37, 38, 39, 40],
+    "description": "Calzado de dama deportivo ultra liviano refuerzo con suela de Goma",
+    "img": [{ "id": "3", "foto": "img/Gaelle/300w/frenteNegro.png" }],
+    "precio": "$ 3.500"
+  },
+  {
+    "id": 6,
+    "marca": "Gaelle",
+    "modelo": "Running 300w",
+    "logo": "img/Logo/Gaelle.png",
+    "color": "Negro - Fucia",
+    "talles": [35, 36, 37, 38, 39, 40],
+    "description": "Calzado de dama deportivo ultra liviano refuerzo con suela de Goma",
+    "img": [{ "id": "3", "foto": "img/Gaelle/300w/frenteNegro.png" }],
+    "precio": "$ 3.500"
+  }
+]

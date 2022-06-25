@@ -1,0 +1,85 @@
+.product-card{
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.5);
+     padding: 20px 30px 30px 30px;
+    background: rgb(155, 152, 152);
+}
+.product-card .logo-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-card .logo-card img{
+height: 50px;
+width: 50px;
+object-fit: cover;
+}
+.product-card .logo-card i{
+    font-size: 27px;
+    color: #020202;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.product-card .logo-card i:hover{
+    color: rgb(181, 7, 7);
+}
+.product-card  .main-images img{
+    width: 200px;
+    height: 150px;
+    transform: rotate(-18deg);
+    position: relative;
+
+bottom: 20px;
+}
+.product-card .detalle{
+    font-size: 12px;
+    font-weight: 600;
+      color: #707070
+}
+
+.product-card .color-price .color-option{
+display: flex;
+align-items: center;
+
+}
+.color-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.color-price .color-option .color{
+font-size: 18px;
+font-weight: 600;
+color: #000;
+margin-right: 8px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.color-price .price{
+display: flex;
+flex-direction:column ;
+
+
+}
+.color-price .price .price_num{
+    font-size:18px;
+    font-weight: 600;
+    color: #707070
+
+}
+.color-price .price .price_letter{
+    font-size: 8px;
+    font-weight: 600;
+    margin-top: -4px;
+    color: #707070
+}
