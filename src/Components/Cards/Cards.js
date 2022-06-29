@@ -3,6 +3,15 @@ import React from "react";
 import "./Cards.css";
 
 const Cards = ({ props }) => {
+  const starts = { calificacion: 5 };
+  const starFill = Array.from(
+    { length: Math.floor(props.calificacion || starts.calificacion) },
+    (v, i) => i
+  );
+  const starHalf = !!(
+    props.calificacion ||
+    starts.calificacion - Math.floor(props.calificacion || starts.calificacion)
+  );
   return (
     <div className="product-card">
       <div className="logo-card">
@@ -24,11 +33,10 @@ const Cards = ({ props }) => {
         </span>
 
         <div className="stars">
-          <i className=" bi bi-star-fill"></i>
-          <i className="bi bi-star-fill"></i>
-          <i className="bi bi-star-fill"></i>
-          <i className="bi bi-star-fill"></i>
-          <i className="bi bi-star-half"></i>
+          {starFill.map((star) => {
+            return <i key={star} className="bi bi-star-fill" />;
+          })}
+          {starHalf && <i className="bi bi-star-half" />}
         </div>
       </div>
       <div className="color-price">

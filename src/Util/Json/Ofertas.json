@@ -54,17 +54,7 @@
     "talles": [35, 36, 37, 38, 39, 40],
     "description": "Calzado de dama deportivo ultra liviano refuerzo con suela de Goma",
     "img": [{ "id": "3", "foto": "img/Gaelle/300w/frenteNegro.png" }],
-    "precio": "$ 3.500"
-  },
-  {
-    "id": 6,
-    "marca": "Gaelle",
-    "modelo": "Running 300w",
-    "logo": "img/Logo/Gaelle.png",
-    "color": "Negro - Fucia",
-    "talles": [35, 36, 37, 38, 39, 40],
-    "description": "Calzado de dama deportivo ultra liviano refuerzo con suela de Goma",
-    "img": [{ "id": "3", "foto": "img/Gaelle/300w/frenteNegro.png" }],
-    "precio": "$ 3.500"
+    "precio": "$ 3.500",
+    "calificacion": 4.5
   }
 ]

@@ -4,7 +4,8 @@ import Menu from "../Menu/Menu.js";
 import Envio from "../Envio/Envio.js";
 
 import CaruselNovedades from "../CaruselNovedades/CaruselNovedades.js";
-import CaruselOfetas from "../CaruselOfetas/CaruselOfetas.js";
+import CatalogOferta from "../CatalogOferta/CatalogOferta.js";
+// import Catalogo from "../Catalogo/Catalogo.js";
 import Footer from "../Footer/Footer.js";
 const Home = () => {
   return (
@@ -13,29 +14,22 @@ const Home = () => {
         <div className="col-12">
           <Envio />
         </div>
-        <div className="col-12">
+        <div className="col-12 sticky-top px-0">
           <Menu />
         </div>
         <div className="col-12">
-          <h1 className="text-center text-Anton pt-3 pb-3">Lanzamientos</h1>
+          <h1 className="text-center text-Anton pt-5 pb-3">Lanzamientos</h1>
           <CaruselNovedades />
         </div>
         <div className="col-12">
-          <h1 className="text-center text-Anton pt-3 pb-3">
+          <h1 className="text-center text-Anton pt-5 pb-5">
             Descuentos Imperdibles
           </h1>
-          <div className="row">
-            <div className="col-6">
-              <CaruselOfetas />
-            </div>
-            <div className="col-6">
-              <h1>info de oferta</h1>
-            </div>
-          </div>
+          <CatalogOferta />
         </div>
-      </div>
-      <div className="col-12">
-        <Footer />
+        <div className="col-12">
+          <Footer />
+        </div>
       </div>
     </div>
   );
