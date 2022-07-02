@@ -1,6 +1,7 @@
 import React from "react";
 import "./Menu.css";
 import Running from "../../Util/Img/Png/Running.png";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
@@ -34,34 +35,46 @@ const Menu = () => {
       text-Anton "
             >
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link
+                  to="/home"
+                  className="nav-link active"
+                  aria-current="page"
+                >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item ">
-                <a className="nav-link" href="#">
+                <Link to="/zapatilla" className="nav-link">
                   Zapatilla
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link to="/outlet" className="nav-link">
+                  Outlet
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/ubicacion" className="nav-link">
                   Ubicación
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link to="/contacto" className="nav-link">
                   Contacto
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link to="/sobreNosotros" className="nav-link">
                   Sobre Nosotros
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <section>
+        <outlet />
+      </section>
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 import Cards from "../Cards/Cards.js";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import OfertaJson from "../../Util/Json/Ofertas.json";
+import Outlet from "../../Util/Json/Outlet.json";
 import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
@@ -12,7 +12,6 @@ import { EffectCube, Pagination, Navigation } from "swiper";
 import "./CaruselOfetas.css";
 
 const CaruselOfetas = () => {
-  const ofertas = OfertaJson;
   return (
     <div className="container">
       <Swiper
@@ -29,11 +28,11 @@ const CaruselOfetas = () => {
         modules={[EffectCube, Pagination, Navigation]}
         className="mySwiper2"
       >
-        {ofertas?.map((oferta) => {
+        {Outlet?.map((Outle) => {
           return (
             <SwiperSlide>
               <div>
-                <Cards key={oferta.id} props={oferta} />
+                <Cards key={Outle.id} props={Outle} />
               </div>
             </SwiperSlide>
           );
