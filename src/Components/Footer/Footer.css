@@ -16,6 +16,7 @@
 }
 .bi-headset{
     font-size: 20px;
+    font-weight: 800;
 
 }
 .bi-geo-alt-fill{
@@ -41,4 +42,9 @@
     }
 .RRamirez{
     font-size: 0.6rem;
+}
+.text-Terminos{
+text-decoration: none;
+text-transform: uppercase;
+
 }

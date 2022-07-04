@@ -1,20 +1,23 @@
 import React from "react";
 import "./Menu.css";
+import Envio from "../Envio/Envio.js";
+import Footer from "../Footer/Footer.js";
 import Running from "../../Util/Img/Png/Running.png";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Menu = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-black">
+      <Envio />
+      <nav className="navbar navbar-expand-lg navbar-dark bg-black ">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <Link to="/" className="navbar-brand" href="#">
             <img
               className="running mx-2 img-fluid"
               src={Running}
               alt="running"
             />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -26,6 +29,7 @@ const Menu = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+
           <div
             className="collapse navbar-collapse "
             id="navbarSupportedContent"
@@ -35,11 +39,7 @@ const Menu = () => {
       text-Anton "
             >
               <li className="nav-item">
-                <Link
-                  to="/home"
-                  className="nav-link active"
-                  aria-current="page"
-                >
+                <Link to="/" className="nav-link active" aria-current="page">
                   Home
                 </Link>
               </li>
@@ -73,8 +73,9 @@ const Menu = () => {
         </div>
       </nav>
       <section>
-        <outlet />
+        <Outlet />
       </section>
+      <Footer />
     </div>
   );
 };

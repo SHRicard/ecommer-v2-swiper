@@ -2,16 +2,16 @@ import React from "react";
 import Cards from "../Cards/Cards.js";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import Outlet from "../../Util/Json/Outlet.json";
+import OutletJson from "../../Util/Json/Outlet.json";
 import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { EffectCube, Pagination, Navigation } from "swiper";
-import "./CaruselOfetas.css";
+import "./Outlet.css";
 
-const CaruselOfetas = () => {
+const Outlet = () => {
   return (
     <div className="container">
       <Swiper
@@ -28,7 +28,7 @@ const CaruselOfetas = () => {
         modules={[EffectCube, Pagination, Navigation]}
         className="mySwiper2"
       >
-        {Outlet?.map((Outle) => {
+        {OutletJson?.map((Outle) => {
           return (
             <SwiperSlide>
               <div>
@@ -42,4 +42,4 @@ const CaruselOfetas = () => {
   );
 };
 
-export default CaruselOfetas;
+export default Outlet;
