@@ -5,12 +5,13 @@
     "logo": "img/Logo/NikeNike.png",
     "modelo": "Vapormax",
     "color": "Blanco - Negro",
+    "talles": [36, 37, 38, 39, 40],
+
     "description": "Capellada cerrada de tela con refuerzo en talon y punta, suela inyectada",
     "img": "img/Nike/blancaB.png",
-    "img1": "img/Jaguar/NegroRojo.png",
-    "img2": "img/Gaelle/Rosa/costadoRosa.png",
-    "img3": "img/Nike/blancaN.png",
-
+    "frente": "img/Jaguar/NegroRojo.png",
+    "costado": "img/Gaelle/Rosa/costadoRosa.png",
+    "zuela": "img/Nike/blancaN.png",
     "precio": "$ 5.300"
   },
   {
@@ -18,12 +19,14 @@
     "marca": "Nike",
     "logo": "img/Logo/NikeNike.png",
     "modelo": "Vapormax",
+    "talles": [36, 37, 38, 39, 40],
+
     "color": "Blanco - Blanco",
     "description": "Capellada cerrada de tela con refuerzo en talon y punta, suela inyectada",
     "img": "img/Nike/blancaB.png",
-    "img1": "img/Nike/blancaB.png",
-    "img2": "img/Nike/blancaB.png",
-    "img3": "img/Nike/blancaB.png",
+    "frente": "img/Jaguar/NegroRojo.png",
+    "costado": "img/Gaelle/Rosa/costadoRosa.png",
+    "zuela": "img/Nike/blancaN.png",
     "precio": "$ 5.300"
   },
   {
@@ -31,12 +34,14 @@
     "marca": "Nike",
     "logo": "img/Logo/NikeNike.png",
     "modelo": "Vapormax",
+    "talles": [36, 37, 38, 39, 40],
+
     "color": "Negro - Blanco",
     "description": "Capellada cerrada de tela con refuerzo en talon y punta, suela inyectada",
     "img": "img/Nike/negraB.png",
-    "img1": "img/Nike/blancaB.png",
-    "img2": "img/Nike/blancaB.png",
-    "img3": "img/Nike/blancaB.png",
+    "frente": "img/Jaguar/NegroRojo.png",
+    "costado": "img/Gaelle/Rosa/costadoRosa.png",
+    "zuela": "img/Nike/blancaN.png",
     "precio": "$ 5.300"
   },
   {
@@ -48,9 +53,9 @@
     "talles": [35, 36, 37, 38, 39, 40],
     "description": "Capellada cerrada con abrojo refozado de tela con refuerzo con suela de Goma",
     "img": "img/Gaelle/2540w/verdeCostado.png",
-    "img1": "img/Gaelle/2540w/verdeFrente.png",
-    "img2": "img/Gaelle/2540w/verdeZuela.png",
-    "img3": "img/Gaelle/2540w/verdeCostado.png",
+    "frente": "img/Jaguar/NegroRojo.png",
+    "costado": "img/Gaelle/Rosa/costadoRosa.png",
+    "zuela": "img/Nike/blancaN.png",
     "precio": "$ 3.500"
   },
   {
@@ -62,9 +67,9 @@
     "talles": [36, 37, 38, 39, 40],
     "description": "Zapatilla confeccionada en poliéster, fácil de calzar gracias a no tener cordones ",
     "img": "img/Jaguar/NegroRosa.png",
-    "img1": "img/Nike/negraB.png",
-    "img2": "img/Nike/negraB.png",
-    "img3": "img/Nike/negraB.png",
+    "frente": "img/Jaguar/NegroRojo.png",
+    "costado": "img/Gaelle/Rosa/costadoRosa.png",
+    "zuela": "img/Nike/blancaN.png",
     "precio": "$ 3.500"
   },
   {
@@ -76,9 +81,9 @@
     "talles": [36, 37, 38, 39, 40],
     "description": "Zapatilla confeccionada en poliéster, fácil de calzar gracias a no tener cordones ",
     "img": "img/Jaguar/NegroRojo.png",
-    "img1": "img/Nike/negraB.png",
-    "img2": "img/Nike/negraB.png",
-    "img3": "img/Nike/negraB.png",
+    "frente": "img/Jaguar/NegroRojo.png",
+    "costado": "img/Gaelle/Rosa/costadoRosa.png",
+    "zuela": "img/Nike/blancaN.png",
     "precio": "$ 3.500"
   },
   {
@@ -90,9 +95,9 @@
     "talles": [35, 36, 37, 38, 39, 40],
     "description": "Calzado de dama deportivo ultra liviano refuerzo con suela de Goma",
     "img": "img/Gaelle/Rosa/costadoRosa.png",
-    "img1": "img/Nike/negraB.png",
-    "img2": "img/Nike/negraB.png",
-    "img3": "img/Nike/negraB.png",
+    "frente": "img/Jaguar/NegroRojo.png",
+    "costado": "img/Gaelle/Rosa/costadoRosa.png",
+    "zuela": "img/Nike/blancaN.png",
     "precio": "$ 3.500"
   },
   {
@@ -105,9 +110,9 @@
     "talles": [35, 36, 37, 38, 39, 40],
     "description": "Calzado de dama deportivo ultra liviano refuerzo con suela de Goma",
     "img": "img/Gaelle/300w/frenteNegro.png",
-    "img1": "img/Nike/negraB.png",
-    "img2": "img/Nike/negraB.png",
-    "img3": "img/Nike/negraB.png",
+    "frente": "img/Jaguar/NegroRojo.png",
+    "costado": "img/Gaelle/Rosa/costadoRosa.png",
+    "zuela": "img/Nike/blancaN.png",
     "precio": "$ 3.500",
     "calificacion": 4.5
   }

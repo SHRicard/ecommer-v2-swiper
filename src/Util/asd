@@ -1,0 +1,35 @@
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
+
+import Productos from "../../Util/Json/Productos.json";
+import "./Detalle.css";
+
+const Detalle = () => {
+  const params = useParams();
+  const zapa = Productos.find(
+    (novedades) => novedades.id === Number(params.zapaId)
+  );
+  const [select, setSelect] = useState(
+    <div className="imgDetalle ">
+      <img className="img-fluid" src={`/${zapa.img}`} alt="Logo" />
+    </div>
+  );
+
+  return (
+    <div className="container">
+      <div className="row ">
+        {/* ///mini fotos/// */}
+        <div className="containerDetalle col-6 bg-dark">
+          <div className="container-detalle bg-primary ">{select}</div>
+        </div>
+
+        {/* //info// */}
+        <div className="col-5">
+          <small>{zapa.marca}</small>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Detalle;

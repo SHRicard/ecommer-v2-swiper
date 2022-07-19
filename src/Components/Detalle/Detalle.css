@@ -1,10 +1,8 @@
-.logo-detalle{
-width:    100px !important;
+.logo{
+    width: 100px!important;
+    height:100px !important;
 }
-.img-detalle {
+.color-detalle{
+    background: rgb(155, 152, 152);
 
-    width: 100px;
-}
-.imgDetalle{
-    max-width: 300px;
 }
