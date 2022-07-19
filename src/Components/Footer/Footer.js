@@ -72,20 +72,20 @@ const Footer = () => {
         <div className="col-md-12 text-center  col-lg">
           <small className="text-muted text-Anton fs-5">Punto de ventas</small>
           <br />
-          <i className="bi bi-geo-alt-fill text-muted">
+          <i className="bi bi-geo-alt-fill text-danger">
             <Link to="/feriaKm28" className=" text-Anton text-muted">
               <small>Feria Km28</small>
             </Link>
           </i>
           <br />
-          <i className="bi bi-geo-alt-fill text-muted">
+          <i className="bi bi-geo-alt-fill text-danger">
             <Link to="/feriaPekin" className=" text-Anton text-muted">
               <small>Feria Pekin</small>
             </Link>
           </i>
           <br />
 
-          <i className="bi bi-geo-alt-fill text-muted">
+          <i className="bi bi-geo-alt-fill text-danger">
             <Link to="/entregas" className=" text-Anton text-muted">
               <small>Entregas</small>
             </Link>

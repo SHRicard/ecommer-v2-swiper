@@ -1,5 +1,23 @@
 import React from "react";
+import axios from "axios";
 import "./Ubicacion.css";
+
+const iniciar = axios.get(
+  "https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"
+);
+
+// function iniciarMap() {
+//   var coord = { lat: -34.5956145, lng: -58.4431949 };
+//   var map = new google.maps.Map(document.getElementById("map"), {
+//     zoom: 10,
+//     center: coord,
+//   });
+//   var marker = new google.maps.Marker({
+//     position: coord,
+//     map: map,
+//   });
+// }
+
 const Ubicacion = () => {
   return (
     <div className="container">
@@ -97,6 +115,7 @@ const Ubicacion = () => {
             ></iframe>
           </div>
         </div>
+        {console.log(iniciar)}
       </div>
     </div>
   );

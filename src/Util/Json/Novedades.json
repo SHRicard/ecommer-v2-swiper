@@ -6,7 +6,11 @@
     "modelo": "Vapormax",
     "color": "Blanco - Negro",
     "description": "Capellada cerrada de tela con refuerzo en talon y punta, suela inyectada",
-    "img": [{ "id": "3", "foto": "img/Nike/negraB.png" }],
+    "img": "img/Nike/blancaN.png",
+    "img1": "img/Nike/blancaB.png",
+    "img2": "img/Nike/blancaB.png",
+    "img3": "img/Nike/blancaB.png",
+
     "precio": "$ 5.300"
   },
   {
@@ -16,7 +20,10 @@
     "modelo": "Vapormax",
     "color": "Blanco - Blanco",
     "description": "Capellada cerrada de tela con refuerzo en talon y punta, suela inyectada",
-    "img": [{ "id": "1", "foto": "img/Nike/blancaB.png" }],
+    "img": "img/Nike/blancaB.png",
+    "img1": "img/Nike/blancaB.png",
+    "img2": "img/Nike/blancaB.png",
+    "img3": "img/Nike/blancaB.png",
     "precio": "$ 5.300"
   },
   {
@@ -26,37 +33,10 @@
     "modelo": "Vapormax",
     "color": "Negro - Blanco",
     "description": "Capellada cerrada de tela con refuerzo en talon y punta, suela inyectada",
-    "img": [{ "id": "2", "foto": "img/Nike/blancaN.png" }],
-    "precio": "$ 5.300"
-  },
-  {
-    "id": 4,
-    "marca": "Nike",
-    "logo": "img/Logo/NikeNike.png",
-    "modelo": "Vapormax",
-    "color": "Blanco - Negro",
-    "description": "Capellada cerrada de tela con refuerzo en talon y punta, suela inyectada",
-    "img": [{ "id": "3", "foto": "img/Nike/negraB.png" }],
-    "precio": "$ 5.300"
-  },
-  {
-    "id": 5,
-    "marca": "Nike",
-    "logo": "img/Logo/NikeNike.png",
-    "modelo": "Vapormax",
-    "color": "Blanco - Blanco",
-    "description": "Capellada cerrada de tela con refuerzo en talon y punta, suela inyectada",
-    "img": [{ "id": "1", "foto": "img/Nike/blancaB.png" }],
-    "precio": "$ 5.300"
-  },
-  {
-    "id": 6,
-    "marca": "Nike",
-    "logo": "img/Logo/NikeNike.png",
-    "modelo": "Vapormax",
-    "color": "Negro - Blanco",
-    "description": "Capellada cerrada de tela con refuerzo en talon y punta, suela inyectada",
-    "img": [{ "id": "2", "foto": "img/Nike/blancaN.png" }],
+    "img": "img/Nike/blancaN.png",
+    "img1": "img/Nike/blancaB.png",
+    "img2": "img/Nike/blancaB.png",
+    "img3": "img/Nike/blancaB.png",
     "precio": "$ 5.300"
   }
 ]

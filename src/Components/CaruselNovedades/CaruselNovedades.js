@@ -44,7 +44,7 @@ const CaruselNovedades = () => {
           return (
             <SwiperSlide>
               <div>
-                <Cards key={noveda.id} props={noveda} />
+                <Cards key={noveda.noveda} props={noveda} />
               </div>
             </SwiperSlide>
           );

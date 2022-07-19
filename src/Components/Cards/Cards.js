@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import "./Cards.css";
 
 const Cards = ({ props }) => {
@@ -20,10 +20,10 @@ const Cards = ({ props }) => {
       </div>
       <div className="main-images">
         {/* //////////////////////////// */}
-        {props.img.map((foto) => {
+        {/* {props.img.map((foto) => {
           return <img key={foto.id} src={foto.foto} alt="NikeLogo" />;
-        })}
-
+        })} */}
+        <img src={props.img} alt="NikeLogo" />
         {/* ///////////////////////// */}
       </div>
       <div>
@@ -52,7 +52,13 @@ const Cards = ({ props }) => {
       </div>
       <div className=" d-grid gap-2 col-6 mx-auto pt-3">
         <button type="button" className="btn btn-dark btn-sm text-Anton">
-          Mas Detalle
+          <Link
+            to={"/detalle/" + props.id}
+            className="nav-link active"
+            aria-current="page"
+          >
+            Detalle
+          </Link>
         </button>
       </div>
     </div>

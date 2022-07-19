@@ -7,6 +7,7 @@ import Outlet from "./Components/CatalogOutlet/CatalogOutlet.js";
 import Ubicacion from "./Components/Ubicacion/Ubicacion.js";
 import Nosotro from "./Components/Nosotro/Nosotro.js";
 import Contacto from "./Components/Contacto/Contacto.js";
+import Detalle from "./Components/Detalle/Detalle.js";
 import TerminosCondiciones from "./Components/TerminosCondiciones/TerminosCondiciones.js";
 import FeriaKm28 from "./Components/FeriaKm28/FeriaKm28.js";
 import FeriaPekin from "./Components/FeriaPekin/FeriaPekin.js";
@@ -23,6 +24,7 @@ function App() {
           <Route path="outlet" element={<Outlet />}></Route>
           <Route path="zapatilla" element={<Catalogo />}></Route>
           <Route path="ubicacion" element={<Ubicacion />}></Route>
+          <Route path="detalle/:zapaId" element={<Detalle />}></Route>
           <Route path="contacto" element={<Contacto />}></Route>
           <Route path="sobreNosotros" element={<Nosotro />}></Route>
           <Route path="termino" element={<TerminosCondiciones />}></Route>
