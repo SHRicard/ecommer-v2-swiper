@@ -1,8 +1,14 @@
-.logo{
-    width: 100px!important;
-    height:100px !important;
-}
+
 .color-detalle{
     background: rgb(155, 152, 152);
 
+}
+.logo{
+    width: 80px!important;
+    height: 80px!important;
+}
+.foto {
+    /* width: 350px!important; */
+    max-height: 300px!important;
+   
 }

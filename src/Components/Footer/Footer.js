@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import "./Footer.css";
 const Footer = () => {
   return (
-    <div className="">
-      <div className="row bg-black pb-3 pt-3 mx-0">
-        <div className="col-md-12 text-center  col-lg-4 mx-2 pb-5">
+    <>
+      <div className="row bg-black pb-3 pt-3 ">
+        <div className="col-md-12 text-center  col-lg-4 pb-5">
           <small className="text-muted text-Anton text-white fs-5">
             Centro de Atención al Cliente
           </small>
@@ -62,8 +62,8 @@ const Footer = () => {
             www.runningdeporte.com.ar
             <br />
             TODOS LOS DERECHOS RESERVADOS.
-            <br /> Las fotos contenidas en este sito y el logotipo son propiedad
-            de <br />
+            <br /> Las fotos contenidas en este sito y el logotipo <br />
+            son propiedad de <br />
             www.runningdeporte.com.ar
             <br />
             Está prohibida la reproducción total o parcial
@@ -96,24 +96,25 @@ const Footer = () => {
           <Link to="/termino" className=" Terminos text-Anton text-muted pb-5">
             Terminos y Condiciones
           </Link>
-        </div>
-        <div className="row text-center">
-          <small className="text-Anton text-muted mx-1">Seguinos en</small>
-          <div className="col-6 text-end">
-            <i class="bi bi-facebook"></i>
-          </div>
-          <div className="col-6 text-start">
+
+          <div className="col-12 text-center">
+            <small className="text-Anton text-muted">Seguinos en</small>
+            <br />
+            <i class="bi bi-facebook"></i>&nbsp;&nbsp;
             <i class="bi bi-instagram"></i>
           </div>
-          <div className="col-12 text-start text-muted text-center text-Anton">
+        </div>
+        <div className="col-12 text-center">
+          <small className="text-start text-muted text-center text-Anton">
             Running Depporte
-          </div>
-          <div className="col-12 text-start text-muted text-center text-Anton RRamirez d-flex justify-content-center align-items-center">
+          </small>
+          <br />
+          <small className="text-start text-muted text-center text-Anton">
             Desarrollador RRamirez
-          </div>
+          </small>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

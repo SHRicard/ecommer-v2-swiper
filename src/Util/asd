@@ -11,25 +11,364 @@ const Detalle = () => {
   );
   const [select, setSelect] = useState(
     <div className="imgDetalle ">
-      <img className="img-fluid" src={`/${zapa.img}`} alt="Logo" />
+      <img className="img-fluid" src={`/${zapa.frente}`} alt="Logo" />
     </div>
   );
 
   return (
-    <div className="container">
-      <div className="row ">
-        {/* ///mini fotos/// */}
-        <div className="containerDetalle col-6 bg-dark">
-          <div className="container-detalle bg-primary ">{select}</div>
+    <div className="container-fluid  color-detalle">
+      <div className="row pt-3 mx-5 pb-3">
+        <div className="col-md-8 col-lg-6">
+          <div className="ratio ratio-4x3 bg-dark">
+            <img
+              className="logo img-fluid mx-2"
+              src={`/${zapa.logo}`}
+              alt="Logo"
+            />
+            {select}
+          </div>
+          {/* ///////////// */}
+          <div className="d-block d-md-none  col-md-4  col-lg-2 d-flex">
+            {/* //stado inicial// */}
+            <div className="col-4 bg-danger " role="button">
+              <div class="ratio ratio-4x3 ">
+                <img
+                  onClick={() => {
+                    setSelect(
+                      <img
+                        className="imgDetalle "
+                        src={`/${zapa.img}`}
+                        alt="Logo"
+                      />
+                    );
+                  }}
+                  className="img-detalle"
+                  src={`/${zapa.img}`}
+                  alt="Logo"
+                />
+              </div>
+            </div>
+            {/* //1// */}
+            <div className="col-4 bg-success " role="button">
+              <div class="ratio ratio-4x3">
+                <img
+                  onClick={() => {
+                    setSelect(
+                      <img
+                        className="imgDetalle "
+                        src={`/${zapa.frente}`}
+                        alt="Logo"
+                      />
+                    );
+                  }}
+                  className="img-detalle"
+                  src={`/${zapa.frente}`}
+                  alt="Logo"
+                />
+              </div>
+            </div>
+            {/* //2// */}
+            <div className="col-4 bg-primary" role="button">
+              <div class="ratio ratio-4x3">
+                <img
+                  onClick={() => {
+                    setSelect(
+                      <img
+                        className="imgDetalle "
+                        src={`/${zapa.costado}`}
+                        alt="Logo"
+                      />
+                    );
+                  }}
+                  className="img-detalle"
+                  src={`/${zapa.costado}`}
+                  alt="Logo"
+                />
+              </div>
+            </div>
+            {/* //3// */}
+            <div className="col-4 bg-success" role="button">
+              <div class="ratio ratio-4x3">
+                <img
+                  onClick={() => {
+                    setSelect(
+                      <img
+                        className="imgDetalle "
+                        src={`/${zapa.zuela}`}
+                        alt="Logo"
+                      />
+                    );
+                  }}
+                  className="img-detalle"
+                  src={`/${zapa.zuela}`}
+                  alt="Logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="d-none d-lg-block col-md-4  col-lg-2 ">
+          {/* //stado inicial// */}
+          <div className="col-10 bg-danger " role="button">
+            <div class="ratio ratio-4x3 ">
+              <img
+                onClick={() => {
+                  setSelect(
+                    <img
+                      className="imgDetalle "
+                      src={`/${zapa.img}`}
+                      alt="Logo"
+                    />
+                  );
+                }}
+                className="img-detalle"
+                src={`/${zapa.img}`}
+                alt="Logo"
+              />
+            </div>
+          </div>
+          {/* //1// */}
+          <div className="col-10 bg-success " role="button">
+            <div class="ratio ratio-4x3">
+              <img
+                onClick={() => {
+                  setSelect(
+                    <img
+                      className="imgDetalle "
+                      src={`/${zapa.frente}`}
+                      alt="Logo"
+                    />
+                  );
+                }}
+                className="img-detalle"
+                src={`/${zapa.frente}`}
+                alt="Logo"
+              />
+            </div>
+          </div>
+          {/* //2// */}
+          <div className="col-10 bg-primary" role="button">
+            <div class="ratio ratio-4x3">
+              <img
+                onClick={() => {
+                  setSelect(
+                    <img
+                      className="imgDetalle "
+                      src={`/${zapa.costado}`}
+                      alt="Logo"
+                    />
+                  );
+                }}
+                className="img-detalle"
+                src={`/${zapa.costado}`}
+                alt="Logo"
+              />
+            </div>
+          </div>
+          {/* //3// */}
+          <div className="col-10 bg-success" role="button">
+            <div class="ratio ratio-4x3">
+              <img
+                onClick={() => {
+                  setSelect(
+                    <img
+                      className="imgDetalle "
+                      src={`/${zapa.zuela}`}
+                      alt="Logo"
+                    />
+                  );
+                }}
+                className="img-detalle"
+                src={`/${zapa.zuela}`}
+                alt="Logo"
+              />
+            </div>
+          </div>
         </div>
 
-        {/* //info// */}
-        <div className="col-5">
-          <small>{zapa.marca}</small>
+        <div className="col-md-4  col-lg-4">
+          <div className=" row">
+            <div className="col-12">
+              <small className="col-12 fs-3 text-Anton ">
+                Zapatilla
+                <small className="text-light text-Anton fs-3">
+                  &nbsp;&nbsp;{zapa.modelo}
+                </small>
+              </small>
+            </div>
+            <div className="col-12 text-center pb-3">
+              <small className="text-muted text-Anton fs-1">{zapa.marca}</small>
+            </div>
+            <div className="col-12 text-Anton  text-center">
+              <small className="text-Anton fs-5 ">Description </small>
+              <br />
+              <small>{zapa.description}</small>
+              <br />
+              <br />
+              <small className="text-Anton">Talles Disponibles</small>
+              <br />
+              <small className=" fs-6 text-Anton text-light">
+                {zapa.talles.map((talle) => {
+                  return <small>&nbsp;&nbsp;&nbsp;{talle}</small>;
+                })}
+              </small>
+            </div>
+
+            <div className="pt-3 text-center d-grid gap-2">
+              <small className="pt-3 text-center text-Anton fs-3">
+                {zapa.precio}
+              </small>
+              <button type="button" class="btn btn-dark text-Anton  btn-sm">
+                Comprar
+              </button>
+            </div>
+          </div>
         </div>
+        {/* ///////////// */}
+
+        {/* //////////// */}
       </div>
     </div>
   );
 };
 
 export default Detalle;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Footer.css";
+const Footer = () => {
+  return (
+    <>
+      <div className="row bg-black pb-3 pt-3 ">
+        <div className="col-md-12 text-center  col-lg-4 pb-5">
+          <small className="text-muted text-Anton text-white fs-5">
+            Centro de Atención al Cliente
+          </small>
+          <br />
+          <br />
+          <small className="text-muted text-Anton text-white atencion fs-6">
+            Lunes a Viernes de 9 a 20 hs / Sábado de 9 a 17 hs
+          </small>
+          <br />
+          <i class="bi bi-envelope-fill text-muted">
+            <small className="text-muted text-Anton atencion fs-6">
+              &nbsp;&nbsp;Running@deporte.com.ar
+            </small>
+          </i>
+          <br />
+          <i
+            className="bi bi-whatsapp text-muted text-whatsapp"
+            href="http://wa.me/541162067821"
+          >
+            &nbsp;
+            <a
+              className="text-muted text-Anton "
+              href="http://wa.me/541162067821"
+            >
+              Runnig Deporte 1
+            </a>
+          </i>
+          <br />
+          <i
+            className="bi bi-whatsapp text-muted text-whatsapp"
+            href="http://wa.me/541162067821"
+          >
+            &nbsp;
+            <a
+              className="text-muted text-Anton "
+              href="http://wa.me/541132716458"
+            >
+              Runnig Deporte 2
+            </a>
+          </i>
+          <br />
+          <i className="bi bi-headset text-muted text-Anton ">
+            &nbsp;1132716458
+          </i>
+          <br />
+          <i className="bi bi-headset text-muted text-Anton ">
+            &nbsp;1162067821
+          </i>
+        </div>
+        <div className="col-md-12 text-center  col-lg-4 text-center d-flex justify-content-center align-items-center pb-5">
+          <small className="text-Anton text-muted">
+            2018 - 2022 © Todos los derechos Reservados
+            <br />
+            www.runningdeporte.com.ar
+            <br />
+            TODOS LOS DERECHOS RESERVADOS.
+            <br /> Las fotos contenidas en este sito y el logotipo <br />
+            son propiedad de <br />
+            www.runningdeporte.com.ar
+            <br />
+            Está prohibida la reproducción total o parcial
+          </small>
+        </div>
+        <div className="col-md-12 text-center  col-lg">
+          <small className="text-muted text-Anton fs-5">Punto de ventas</small>
+          <br />
+          <i className="bi bi-geo-alt-fill text-danger">
+            <Link to="/feriaKm28" className=" text-Anton text-muted">
+              <small>Feria Km28</small>
+            </Link>
+          </i>
+          <br />
+          <i className="bi bi-geo-alt-fill text-danger">
+            <Link to="/feriaPekin" className=" text-Anton text-muted">
+              <small>Feria Pekin</small>
+            </Link>
+          </i>
+          <br />
+
+          <i className="bi bi-geo-alt-fill text-danger">
+            <Link to="/entregas" className=" text-Anton text-muted">
+              <small>Entregas</small>
+            </Link>
+          </i>
+          <br />
+          <br />
+
+          <Link to="/termino" className=" Terminos text-Anton text-muted pb-5">
+            Terminos y Condiciones
+          </Link>
+        </div>
+        <div className="row ">
+          <div className="col-12 text-center">
+            <small className="text-Anton text-muted">Seguinos en</small>
+          </div>
+          <div className="col-6 text-end">
+            <i class="bi bi-facebook"></i>
+          </div>
+          <div className="col-6 text-start">
+            <i class="bi bi-instagram"></i>
+          </div>
+          <div className="col-12 text-start text-muted text-center text-Anton">
+            Running Depporte
+          </div>
+          <div className="col-12 text-start text-muted text-center text-Anton RRamirez d-flex justify-content-center align-items-center">
+            Desarrollador RRamirez
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Footer;

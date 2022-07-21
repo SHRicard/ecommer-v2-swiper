@@ -2,21 +2,17 @@ import React from "react";
 import "./Menu.css";
 import Envio from "../Envio/Envio.js";
 import Footer from "../Footer/Footer.js";
-// import Running from "../../../public/img/Logo/Running.png";
+import Running from "../../Util/Img/Running.png";
 import { Link, Outlet } from "react-router-dom";
 
 const Menu = () => {
   return (
-    <div>
+    <div className="container-fluid mx-0">
       <Envio />
       <nav className="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand" href="#">
-            {/* <img
-              className="running mx-2 img-fluid"
-              src={Running}
-              alt="running"
-            /> */}
+            <img className="running img-fluid" src={Running} alt="running" />
           </Link>
           <button
             className="navbar-toggler"

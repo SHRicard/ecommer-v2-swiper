@@ -9,142 +9,149 @@ const Detalle = () => {
   const zapa = Productos.find(
     (novedades) => novedades.id === Number(params.zapaId)
   );
-  const [select, setSelect] = useState(
+  const [img, setImg] = useState(
     <div className="imgDetalle ">
-      <img className="img-fluid" src={`/${zapa.img}`} alt="Logo" />
+      <img className="img-fluid" src={`/${zapa.frente}`} alt="Logo" />
     </div>
   );
+  const [talle, setTalle] = useState();
 
   return (
-    <div className="container-fluid  color-detalle">
+    <div className="container-fluid color-detalle">
       <div className="row">
-        <div className="col-12 col-lg-6">
-          <div className="ratio ratio-4x3 bg-dark">
-            <img className="logo mx-3 p-3" src={`/${zapa.logo}`} alt="Logo" />
-
-            {select}
-          </div>
+        <div className="col-md-8">
           <div className="row">
-            {/* //stado inicial// */}
-            <div className="col-3 bg-danger " role="button">
-              <div class="ratio ratio-4x3 ">
+            <div className="col-10">
+              <div className="ratio ratio-4x3">
                 <img
-                  onClick={() => {
-                    setSelect(
-                      <img
-                        className="imgDetalle "
-                        src={`/${zapa.img}`}
-                        alt="Logo"
-                      />
-                    );
-                  }}
-                  className="img-detalle"
-                  src={`/${zapa.img}`}
+                  className="logo img-fluid"
+                  src={`/${zapa.logo}`}
                   alt="Logo"
                 />
+                {img}
               </div>
             </div>
-            {/* //1// */}
-            <div className="col-3 bg-success " role="button">
-              <div class="ratio ratio-4x3">
-                <img
-                  onClick={() => {
-                    setSelect(
-                      <img
-                        className="imgDetalle "
-                        src={`/${zapa.frente}`}
-                        alt="Logo"
-                      />
-                    );
-                  }}
-                  className="img-detalle"
-                  src={`/${zapa.frente}`}
-                  alt="Logo"
-                />
+            <div className="col-2  pt-5">
+              {/* //stado inicial// */}
+              <div role="button">
+                <div class="ratio ratio-4x3 ">
+                  <img
+                    onClick={() => {
+                      setImg(
+                        <img
+                          className="imgDetalle "
+                          src={`/${zapa.img}`}
+                          alt="Logo"
+                        />
+                      );
+                    }}
+                    className="img-detalle"
+                    src={`/${zapa.img}`}
+                    alt="Logo"
+                  />
+                </div>
               </div>
-            </div>
-            {/* //2// */}
-            <div className="col-3 bg-primary" role="button">
-              <div class="ratio ratio-4x3">
-                <img
-                  onClick={() => {
-                    setSelect(
-                      <img
-                        className="imgDetalle "
-                        src={`/${zapa.costado}`}
-                        alt="Logo"
-                      />
-                    );
-                  }}
-                  className="img-detalle"
-                  src={`/${zapa.costado}`}
-                  alt="Logo"
-                />
+              {/* //1// */}
+              <div role="button">
+                <div class="ratio ratio-4x3">
+                  <img
+                    onClick={() => {
+                      setImg(
+                        <img
+                          className="imgDetalle "
+                          src={`/${zapa.frente}`}
+                          alt="Logo"
+                        />
+                      );
+                    }}
+                    className="img-detalle"
+                    src={`/${zapa.frente}`}
+                    alt="Logo"
+                  />
+                </div>
               </div>
-            </div>
-            {/* //3// */}
-            <div className="col-3 bg-success" role="button">
-              <div class="ratio ratio-4x3">
-                <img
-                  onClick={() => {
-                    setSelect(
-                      <img
-                        className="imgDetalle "
-                        src={`/${zapa.zuela}`}
-                        alt="Logo"
-                      />
-                    );
-                  }}
-                  className="img-detalle"
-                  src={`/${zapa.zuela}`}
-                  alt="Logo"
-                />
+              {/* //2// */}
+              <div role="button">
+                <div class="ratio ratio-4x3">
+                  <img
+                    onClick={() => {
+                      setImg(
+                        <img
+                          className="imgDetalle "
+                          src={`/${zapa.costado}`}
+                          alt="Logo"
+                        />
+                      );
+                    }}
+                    className="img-detalle"
+                    src={`/${zapa.costado}`}
+                    alt="Logo"
+                  />
+                </div>
+              </div>
+              {/* //3// */}
+              <div role="button">
+                <div class="ratio ratio-4x3">
+                  <img
+                    onClick={() => {
+                      setImg(
+                        <img
+                          className="imgDetalle "
+                          src={`/${zapa.zuela}`}
+                          alt="Logo"
+                        />
+                      );
+                    }}
+                    className="img-detalle"
+                    src={`/${zapa.zuela}`}
+                    alt="Logo"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="col-12 col-lg-6 pt-3">
+        <div className="col-md-4 bg-warning">
           <div className="row">
-            <div className="col-12 text-center">
-              <small className="text-Anton text-balck fs-5">
-                Zapatilla&nbsp;&nbsp;
-                <small className="text-Anton text-muted fs-5 ">
-                  {zapa.modelo}
+            <div className="col-12 pt-3 text-center">
+              <small className="col-12 fs-4 text-Anton ">
+                Zapatilla
+                <small className="text-light text-Anton fs-4">
+                  &nbsp;&nbsp;{zapa.modelo}
                 </small>
               </small>
             </div>
-            <div className="col-12 text-center ">
-              <h1 className="text-Anton fs-1 ">{zapa.marca}</h1>
+            <div className="col-12 text-center">
+              <small className="text-muted text-Anton fs-1">{zapa.marca}</small>
             </div>
-            <div className="col-12">
-              <div className="row text-center pt-3">
-                <div className="col-6 text-end text-Anton  text-muted">
-                  <small className="fs-2">{zapa.precio}</small>
-                </div>
-                <div className="col-6 ">
-                  <div className="d-grid gap-2">
-                    <button
-                      className="btn btn-dark text-Anton  text-light"
-                      type="button"
-                    >
-                      Comprar
-                    </button>
-                  </div>
-                </div>
-              </div>
+            <div className="col-12 text-center">
+              <small className="text-Anton fs-5 ">Description </small>
+              <br />
+              <small className="text-Anton">{zapa.description}</small>
             </div>
 
-            <div className="col-12">
-              <div className="row text-center">
-                <small className="col-12  text-Anton ">
-                  Talles Disponibles
-                </small>
-                <small className="col-12  text-Anton  text-muted">
-                  {zapa.talles.map((talle) => {
-                    return <small>&nbsp;&nbsp;&nbsp;{talle}</small>;
-                  })}
-                </small>
-              </div>
+            <div className="col-12 text-center pt-3">
+              <small className="text-Anton  fs-4 ">Talles Disponibles</small>
+              <br />
+
+              <small className=" fs-6 text-Anton text-light">
+                {zapa.talles.map((talle) => {
+                  return <small>&nbsp;&nbsp;&nbsp;{talle}</small>;
+                })}
+              </small>
+            </div>
+            <div className="col-12 text-center pt-3">
+              <small className="pt-3 text-center text-Anton fs-3">
+                {zapa.precio}
+              </small>
+            </div>
+            <div className="pt-3 text-center d-grid gap-2 pb-3">
+              <button
+                type="button"
+                className="btn btn-dark text-Anton  btn-sm "
+              >
+                Comprar
+              </button>
             </div>
           </div>
         </div>

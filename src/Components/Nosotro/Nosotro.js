@@ -10,7 +10,7 @@ const Nosotro = () => {
         </div>
         <div className="col-12 col-lg-6 pb-3 d-flex text-center align-items-center text-Anton text-black ">
           Running Deporte es mas que una tienda online, <br />
-          Es un equipo que trabajo que todo los dias busca la manera de ofrecer{" "}
+          Es un equipo que trabajo que todo los dias busca la manera de ofrecer
           <br />
           la mejor atencion , productos y precio a los cliente Running Deporte
           inicio con la idea de ofrecer <br />
@@ -28,7 +28,7 @@ const Nosotro = () => {
         <div className="col-12 col-lg-6  pb-2 ">
           <img src={RunningDeporte} alt="running" className="img-fluid" />
         </div>
-        <div className="col-12 bg-primary text-center  pb-3">
+        <div className="col-12 bg-warning text-center  pb-3">
           <small className="  text-Anton text-black fs-6">
             Pregunta Frecuente
           </small>

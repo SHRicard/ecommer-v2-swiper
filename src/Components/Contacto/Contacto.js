@@ -1,5 +1,5 @@
 import React from "react";
-// import Logo from "../../../public/img/Logo/Gaelle.png";
+import Logo from "../../Util/Img/Running.png";
 import { Link } from "react-router-dom";
 
 import "./Contacto.css";
@@ -12,7 +12,7 @@ const Contacto = () => {
         </div>
 
         <div className="col-12 col-lg-6 bg-black p-5">
-          {/* <img src={Logo} alt="running" className="img-fluid " /> */}
+          <img src={Logo} alt="running" className="img-fluid " />
         </div>
         <div className="col-12 col-lg-6 text-center text-Anton fs-2">
           <small className="text-dark">Contacto</small>
