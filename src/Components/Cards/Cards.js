@@ -42,6 +42,7 @@ const Cards = ({ props }) => {
       <div className="color-price">
         <div>
           <small className="text-Anton text-white ">{props.color}</small>
+          <br />
         </div>
         <div className="price">
           <span className="text-Anton text-white ">{props.precio}</span>
@@ -50,11 +51,12 @@ const Cards = ({ props }) => {
           </span>
         </div>
       </div>
-      <div className=" d-grid gap-2 col-6 mx-auto pt-3">
+
+      <div className=" d-grid gap-2 col-10 mx-auto pt-3">
         <button type="button" className="btn btn-dark btn-sm text-Anton">
           <Link
             to={"/detalle/" + props.id}
-            className="nav-link active"
+            className="nav-link active text-white"
             aria-current="page"
           >
             Detalle

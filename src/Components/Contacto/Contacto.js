@@ -5,15 +5,12 @@ import { Link } from "react-router-dom";
 import "./Contacto.css";
 const Contacto = () => {
   return (
-    <div className="container pb-5">
+    <div className="container-fluid pb-5 bg-warning">
       <div className="row">
         <div className="col-12 text-center pt-2 pb-3  fs-1 text-Anton text-black">
           RUNNING DEPORTE <br />
         </div>
 
-        <div className="col-12 col-lg-6 bg-black p-5">
-          <img src={Logo} alt="running" className="img-fluid " />
-        </div>
         <div className="col-12 col-lg-6 text-center text-Anton fs-2">
           <small className="text-dark">Contacto</small>
           <div className="row">
@@ -95,9 +92,9 @@ const Contacto = () => {
               </div>
             </div>
           </div>
-          <div className="col p-5 bg-black d-flex justify-content-center   align-items-center ">
-            <small className="text-white">Runnig Deporte</small>
-          </div>
+        </div>
+        <div className="col-6">
+          <img className="img-fluid" src={Logo} alt="noIMG" />
         </div>
       </div>
     </div>
