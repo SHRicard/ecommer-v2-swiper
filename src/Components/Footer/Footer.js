@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Footer.css";
 const Footer = () => {
   return (
-    <>
+    <div className="container-fluid">
       <div className="row bg-black pb-3 pt-3 ">
         <div className="col-md-12 text-center  col-lg-4 pb-5">
           <small className="text-muted text-Anton text-white fs-5">
@@ -114,7 +114,7 @@ const Footer = () => {
           </small>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

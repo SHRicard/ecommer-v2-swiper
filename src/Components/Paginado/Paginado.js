@@ -1,28 +1,13 @@
 import React from "react";
-import "./Paginado.css";
-export default function Paginado({
-  setPaginaActual,
-  nProductos,
-  paginaActual,
-}) {
-  const numeroPagina = Array.from(
-    { length: Math.ceil(nProductos / 2) },
-    (v, i) => i + 1
-  );
-
-  return (
+const Paginado = (props) => {
+  const productos = props.productos.return(
     <div>
-      {numeroPagina.map((numero) => {
-        return (
-          <button
-            className="btn btn-primary"
-            disabled={paginaActual === numero}
-            onClick={() => setPaginaActual(numero)}
-          >
-            {numero}
-          </button>
-        );
-      })}
+      <h2>pagina : {props.currentPage}</h2>
+      <button onClick={props.prevHandler}>prev</button>
+      <button onClick={props.nextHandler}>next</button>
+      {productos}
     </div>
   );
-}
+};
+
+export default Paginado;
