@@ -26,7 +26,7 @@ object-fit: cover;
 }
 .product-card  .main-images img{
     width: 200px;
-    height: 150px;
+    /* height: 150px; */
     transform: rotate(-18deg);
     position: relative;
 

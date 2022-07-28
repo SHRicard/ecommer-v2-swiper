@@ -22,12 +22,12 @@ const Footer = () => {
           </i>
           <br />
           <i
-            className="bi bi-whatsapp text-muted text-whatsapp"
+            className="   bi bi-whatsapp text-muted text-whatsapp"
             href="http://wa.me/541162067821"
           >
             &nbsp;
             <a
-              className="text-muted text-Anton "
+              className="text-Terminos text-muted text-Anton "
               href="http://wa.me/541162067821"
             >
               Runnig Deporte 1
@@ -40,7 +40,7 @@ const Footer = () => {
           >
             &nbsp;
             <a
-              className="text-muted text-Anton "
+              className="text-Terminos text-muted text-Anton "
               href="http://wa.me/541132716458"
             >
               Runnig Deporte 2
@@ -73,27 +73,39 @@ const Footer = () => {
           <small className="text-muted text-Anton fs-5">Punto de ventas</small>
           <br />
           <i className="bi bi-geo-alt-fill text-danger">
-            <Link to="/feriaKm28" className=" text-Anton text-muted">
+            <Link
+              to="/feriaKm28"
+              className=" text-Terminos text-Anton text-muted"
+            >
               <small>Feria Km28</small>
             </Link>
           </i>
           <br />
           <i className="bi bi-geo-alt-fill text-danger">
-            <Link to="/feriaPekin" className=" text-Anton text-muted">
+            <Link
+              to="/feriaPekin"
+              className=" text-Terminos text-Anton text-muted"
+            >
               <small>Feria Pekin</small>
             </Link>
           </i>
           <br />
 
           <i className="bi bi-geo-alt-fill text-danger">
-            <Link to="/entregas" className=" text-Anton text-muted">
+            <Link
+              to="/entregas"
+              className=" text-Terminos text-Anton text-muted"
+            >
               <small>Entregas</small>
             </Link>
           </i>
           <br />
           <br />
 
-          <Link to="/termino" className=" Terminos text-Anton text-muted pb-5">
+          <Link
+            to="/termino"
+            className=" text-Terminos  text-Anton text-muted pb-5"
+          >
             Terminos y Condiciones
           </Link>
 

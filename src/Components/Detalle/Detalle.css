@@ -12,3 +12,8 @@
     max-height: 300px!important;
    
 }
+.pedido a{
+   text-decoration: none !important;
+   cursor: pointer !important;
+   color:aliceblue !important;
+}

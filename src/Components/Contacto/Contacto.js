@@ -32,7 +32,7 @@ const Contacto = () => {
                 >
                   &nbsp;
                   <a
-                    className="text-dark text-Anton "
+                    className="text-Terminos text-dark text-Anton "
                     href="http://wa.me/541162067821"
                   >
                     Runnig Deporte 1
@@ -47,7 +47,7 @@ const Contacto = () => {
                 >
                   &nbsp;
                   <a
-                    className="text-dark text-Anton "
+                    className="text-Terminos text-dark text-Anton "
                     href="http://wa.me/541132716458"
                   >
                     Runnig Deporte 2
@@ -71,21 +71,30 @@ const Contacto = () => {
             <div className="row">
               <div className="col">
                 <i className="bi bi-geo-alt-fill text-danger">
-                  <Link to="/feriaKm28" className=" text-Anton text-dark">
+                  <Link
+                    to="/feriaKm28"
+                    className="text-Terminos text-Anton text-dark"
+                  >
                     <small>Feria Km28</small>
                   </Link>
                 </i>
               </div>
               <div className="col">
                 <i className="bi bi-geo-alt-fill text-danger">
-                  <Link to="/feriaPekin" className=" text-Anton text-dark">
+                  <Link
+                    to="/feriaPekin"
+                    className="text-Terminos text-Anton text-dark"
+                  >
                     <small>Feria Pekin</small>
                   </Link>
                 </i>
               </div>
               <div className="col">
                 <i className="bi bi-geo-alt-fill text-danger">
-                  <Link to="/entregas" className=" text-Anton text-dark">
+                  <Link
+                    to="/entregas"
+                    className=" text-Terminos text-Anton text-dark"
+                  >
                     <small>Entregas</small>
                   </Link>
                 </i>

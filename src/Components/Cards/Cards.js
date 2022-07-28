@@ -19,10 +19,6 @@ const Cards = ({ props }) => {
         <i class="bi bi-bag-heart"></i>
       </div>
       <div className="main-images">
-        {/* //////////////////////////// */}
-        {/* {props.img.map((foto) => {
-          return <img key={foto.id} src={foto.foto} alt="NikeLogo" />;
-        })} */}
         <img src={props.img} alt="NikeLogo" />
         {/* ///////////////////////// */}
       </div>
@@ -51,7 +47,14 @@ const Cards = ({ props }) => {
           </span>
         </div>
       </div>
-
+      <div className="col-12 text-white text-Anton">
+        Talles&nbsp;: &nbsp;
+        {props.talles?.map((t) => {
+          return (
+            <small className="text-Anton text-dark">&nbsp; {t}&nbsp; </small>
+          );
+        })}
+      </div>
       <div className=" d-grid gap-2 col-10 mx-auto pt-3">
         <button type="button" className="btn btn-dark btn-sm text-Anton">
           <Link
