@@ -66,6 +66,9 @@ const Cards = ({ props }) => {
           </Link>
         </button>
       </div>
+      <div className="col-12 text-black text-Anton text-center pt-2">
+        <small>{props.tipo_producto}</small>
+      </div>
     </div>
   );
 };
