@@ -200,18 +200,19 @@ const Detalle = () => {
                   className="pedido btn btn-dark text-Anton  btn-sm  .text-wrap"
                 >
                   <a
-                    href={`http://wa.me/541132716458?text=Hola%20estoy%20interesado%20en%20este%20modelo%20${zapa.modelo}%20talle%20${elegido}%20muchas%20gracias`}
+                    href={`http://wa.me/541132716458?text=Hola%20estoy%20interesado%20en%20este%20modelo%20${zapa.modelo}%20en%20color%20${zapa.color}%20y%20en%20talle%20${elegido}%20muchas%20gracias`}
                   >
                     Enviar Pedido
                   </a>
                 </button>
               ) : (
                 <button
+                  disabled
                   type="button"
                   className="pedido btn btn-dark text-Anton  btn-sm  .text-wrap"
                 >
                   <a
-                    href={`http://wa.me/541132716458?text=Hola%20estoy%20interesado%20en%20este%20modelo%20${zapa.modelo}%20talle%20${elegido}%20muchas%20gracias`}
+                    href={`http://wa.me/541132716458?text=Hola%20estoy%20interesado%20en%20este%20modelo%20${zapa.modelo}%20en%20color%20${zapa.color}%20y%20en%20talle%20${elegido}%20muchas%20gracias`}
                   >
                     Enviar Pedido
                   </a>

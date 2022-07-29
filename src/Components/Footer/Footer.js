@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
         <div className="col-md-12 text-center  col-lg-4 text-center d-flex justify-content-center align-items-center pb-5">
           <small className="text-Anton text-muted">
-            2018 - 2022 © Todos los derechos Reservados
+            2019 - 2022 © Todos los derechos Reservados
             <br />
             www.runningdeporte.com.ar
             <br />
@@ -112,7 +112,10 @@ const Footer = () => {
           <div className="col-12 text-center">
             <small className="text-Anton text-muted">Seguinos en</small>
             <br />
-            <i class="bi bi-facebook"></i>&nbsp;&nbsp;
+            <a href="https://www.facebook.com/mijael.ramirez.3914">
+              <i class="bi bi-facebook"></i>
+            </a>
+            &nbsp;&nbsp;
             <i class="bi bi-instagram"></i>
           </div>
         </div>
