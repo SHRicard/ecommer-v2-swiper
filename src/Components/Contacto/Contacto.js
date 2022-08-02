@@ -75,7 +75,7 @@ const Contacto = () => {
                     to="/feriaKm28"
                     className="text-Terminos text-Anton text-dark"
                   >
-                    <small>Feria Km28</small>
+                    <small className="fs-6">Feria Km28</small>
                   </Link>
                 </i>
               </div>
@@ -85,7 +85,7 @@ const Contacto = () => {
                     to="/feriaPekin"
                     className="text-Terminos text-Anton text-dark"
                   >
-                    <small>Feria Pekin</small>
+                    <small className="fs-6">Feria Pekin</small>
                   </Link>
                 </i>
               </div>
@@ -95,14 +95,14 @@ const Contacto = () => {
                     to="/entregas"
                     className=" text-Terminos text-Anton text-dark"
                   >
-                    <small>Entregas</small>
+                    <small className="fs-6">Entregas</small>
                   </Link>
                 </i>
               </div>
             </div>
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-sm-12 col-lg-6 pt-5">
           <img className="img-fluid" src={Logo} alt="noIMG" />
         </div>
       </div>
