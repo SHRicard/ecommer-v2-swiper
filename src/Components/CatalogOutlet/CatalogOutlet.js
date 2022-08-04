@@ -28,7 +28,7 @@ const CatalogOutlet = () => {
               <p>
                 encontrarás los mejores precio del mercado desde
                 <span className="text-danger">&nbsp;4.000$&nbsp;</span>hasta
-                <span className="text-danger">&nbsp;5.500$&nbsp;</span>
+                <span className="text-danger">&nbsp;6.500$&nbsp;</span>
                 hasta agotar stock
               </p>
               <p className="fs-3">Envíos a todo el país!</p>

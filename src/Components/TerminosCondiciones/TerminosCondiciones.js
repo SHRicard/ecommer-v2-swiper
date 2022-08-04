@@ -37,7 +37,7 @@ const TerminosCondiciones = () => {
                   cuenta con capellá reforzada en algunos casos son originales.
                   Para verificar si el producto elegido es original o replicada,
                   puede ingresar al detalle del producto y verificar la
-                  procedencia de dicho producto. Corregido con
+                  procedencia de dicho producto.
                 </small>
                 <br />
                 <br />
