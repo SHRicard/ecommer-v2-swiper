@@ -40,6 +40,10 @@ const Catalogo = () => {
   const filterReset = () => {
     setSelect(0);
   };
+  const changePage = (number) => {
+    window.scrollTo(0, 0);
+    setPaginaActual(number);
+  };
 
   return (
     <div className="container-fluid bg-warning">
@@ -144,7 +148,7 @@ const Catalogo = () => {
               <li className={`page-item ${paginaActual === 1 && "disabled"}`}>
                 <span
                   className="page-link"
-                  onClick={() => setPaginaActual(paginaActual - 1)}
+                  onClick={() => changePage(paginaActual - 1)}
                   aria-label="Previous"
                 >
                   <span aria-hidden="true">&laquo;</span>
@@ -154,7 +158,7 @@ const Catalogo = () => {
                 <li className="page-item">
                   <span
                     className="page-link"
-                    onClick={() => setPaginaActual(paginaActual - 1)}
+                    onClick={() => changePage(paginaActual - 1)}
                   >
                     {paginaActual - 1}
                   </span>
@@ -167,7 +171,7 @@ const Catalogo = () => {
                 <li className="page-item">
                   <span
                     className="page-link"
-                    onClick={() => setPaginaActual(paginaActual + 1)}
+                    onClick={() => changePage(paginaActual + 1)}
                   >
                     {paginaActual + 1}
                   </span>
@@ -180,7 +184,7 @@ const Catalogo = () => {
               >
                 <span
                   className="page-link"
-                  onClick={() => setPaginaActual(paginaActual + 1)}
+                  onClick={() => changePage(paginaActual + 1)}
                   aria-label="Next"
                 >
                   <span aria-hidden="true">&raquo;</span>
