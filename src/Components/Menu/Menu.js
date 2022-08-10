@@ -42,15 +42,15 @@ const Menu = () => {
       text-Anton "
             >
               <li className="nav-item" onClick={() => closeCollapse()}>
-                <Link to="/" className="nav-link active" aria-current="page">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item" onClick={() => closeCollapse()}>
-                <Link to="/zapatilla" className="nav-link">
+                <Link
+                  to="/zapatilla"
+                  className="nav-link active"
+                  aria-current="page"
+                >
                   Zapatilla
                 </Link>
               </li>
+
               <li className="nav-item" onClick={() => closeCollapse()}>
                 <Link to="/outlet" className="nav-link">
                   Outlet
