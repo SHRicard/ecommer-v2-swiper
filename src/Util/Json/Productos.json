@@ -427,25 +427,7 @@
     "cantidad": 25,
     "oferta": "si"
   },
-  {
-    "id": 203,
-    "marca": "Gaelle",
-    "logo": "img/Logo/Gaelle.png",
-    "modelo": "Art 6853",
-    "color": "Gris",
-    "talles": [38],
-    "description": "Capellada doble de tela con refuerzo en talon y punta, suela entera inyectada Ultra liviana ",
-    "img": "img/Gaelle/Oferta/costado.png",
-    "frente": "img/Gaelle/Oferta/duo.png",
-    "costado": "img/Gaelle/Oferta/suela.png",
-    "zuela": "img/Gaelle/Oferta/talon.png",
-    "precio": "$ 4.000",
-    "tipo_producto": "Original",
-    "img_producto": "Las Fotos de los producto que se ofrecen son reales NO fueron pasa por ningun tipo de filtro",
-    "origen": "Made in Brasil",
-    "cantidad": 1,
-    "oferta": "si"
-  },
+
   {
     "id": 204,
     "marca": "Gaelle",
